@@ -1,0 +1,9 @@
+@cor-especial: #adcfaf;
+.texto-sombreado(@top, @left, @blur, @cor) {
+    text-shadow: @top @left @blur @cor;
+}
+
+h1 {
+    color: @cor-especial;
+    .texto-sombreado(1px, 1px, 2px, #FFF);
+}
